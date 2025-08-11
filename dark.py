@@ -21,6 +21,11 @@ from indicators import (
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackQueryHandler
+from keep_alive import keep_alive
+
+keep_alive()
+
+
 
 # --- Config ---
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
